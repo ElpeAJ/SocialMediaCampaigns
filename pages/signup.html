@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMC Sign up Page</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="registrationPage">
+      <div class="registrationImgDiv">
+        <img src="../images/signup6-removebg-preview.png" alt="" />
+      </div>
+      <div class="registrationDiv">
+        <form
+          class="wholeForm"
+          name="registration"
+          action="signup.php"
+          method="post"
+        >
+          <h1 class="formHeading">Sign Up. It's easy!</h1>
+          <div class="formFlex">
+            <div class="formInput">
+              <label for="category">First Name</label>
+              <input
+                id="item"
+                type="text"
+                value=""
+                name="first-name"
+                required
+                min="2"
+                max="30"
+              />
+            </div>
+            <div class="formInput">
+              <label for="category">Last Name</label>
+              <input
+                id="item"
+                type="text"
+                value=""
+                name="last-name"
+                required
+                min="2"
+                max="30"
+              />
+            </div>
+          </div>
+          <div class="formFlex">
+            <div class="formInput">
+              <label for="category">Address</label>
+              <input
+                id="item"
+                type="address"
+                value=""
+                name="address"
+                required
+                minlength="9"
+                maxlength="60"
+              />
+            </div>
+            <div class="formInput">
+              <label for="category">Town</label>
+              <input
+                id="item"
+                type="town"
+                value=""
+                name="town"
+                required
+                minlength="3"
+                maxlength="60"
+              />
+            </div>
+          </div>
+          <div class="formFlex">
+            <div class="formInput">
+              <label for="category">County</label>
+              <input
+                id="item"
+                type="county"
+                value=""
+                name="county"
+                required
+                minlength="5"
+                maxlength="60"
+              />
+            </div>
+            <div class="formInput">
+              <label for="category">Postcode</label>
+              <input
+                id="item"
+                type="postcode"
+                value=""
+                name="postcode"
+                required
+                minlength="4"
+                maxlength="60"
+              />
+            </div>
+          </div>
+          <div class="formFlex">
+            <div class="formInput">
+              <label for="category">Tel No</label>
+              <input
+                id="item"
+                type="tel"
+                value=""
+                name="tel"
+                required
+                minlength="13"
+                maxlength="60"
+              />
+            </div>
+            <div class="formInput">
+              <label for="category">Email Address</label>
+              <input
+                id="item"
+                type="email"
+                value=""
+                name="email"
+                required
+                minlength="13"
+                maxlength="60"
+              />
+            </div>
+          </div>
+          <div class="formFlex">
+            <div class="formInput">
+              <label for="category">Username</label>
+              <input
+                id="item"
+                type="text"
+                value=""
+                name="username"
+                minlength="6"
+                maxlength="30"
+              />
+            </div>
+            <div class="formInput">
+              <label for="category">Password</label>
+              <input
+                id="item"
+                type="password"
+                value=""
+                name="password"
+                min="8"
+                max="30"
+              />
+            </div>
+          </div>
+          <div class="formInput">
+            <label for="category">Date of Birth</label>
+            <input
+              id="item"
+              type="date"
+              value=""
+              name="dob"
+              minlength="7"
+              maxlength="30"
+            />
+          </div>
+          <div class="formInput">
+            <label>Gender</label>
+            <div class="radioElements">
+              <div class="select-radio">
+                <input type="radio" name="gender" />
+                <label>Male</label>
+              </div>
+              <div class="select-radio">
+                <input type="radio" name="gender" />
+                <label>Female</label>
+              </div>
+            </div>
+          </div>
+          <div class="keeploggedin">
+            <input type="checkbox" name="term" id="" /><label
+              >I agree with the Term of service and Privacy policy</label
+            >
+          </div>
+          <div class="sbtn-div">
+            <input type="submit" value="Create Account" class="sbtn" />
+          </div>
+          <div class="create">
+            <p>Already have account?<a href="login.html">Log In</a></p>
+          </div>
+          <!-- <input class="subB" type="submit" value="Submit" />
+          <p class="member">
+            Already a Member? <a href="member.html">Login</a>
+          </p> -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
