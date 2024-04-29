@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* starts here */
+
+.upper2 {
+  font-size: 58px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.lower2 {
+  font-size: 27px;
+  font-style: italic;
+  color: #ae68b1;
+  background-color: white;
+}
+
+.company_title {
+  font-family: cursive;
+}
+
+#smcheader a{
+  text-decoration: none;
+}
+
+/* Ends here*/
+
+header {
+  background-color:#ae8ec0;
+  padding-bottom: 20px;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  background-color: #ae8ec0;
+  padding-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 20px 0px;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* .navigation {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+}
+
+.navigation li.active a {
+  font-weight: bold;
+} */
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media a {
+  color: #333;
+}
+
+/* #main-content {
+  display: flex;
+  border: 2px solid yellow;
+  width: 50%;
+  /* font-size: 45px; 
+} */
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .search-bar {
+    width: 50%;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    /* align-items: */
+  }
+}
+
+#nav_items_home {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+  flex-wrap: wrap;
+  color:#ae8ec0;
+}
+
+#nav_items_home > li {
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+#nav_items_home li a {
+  /* display: block; */
+  font-weight: 450;
+  text-decoration: none;
+  font-size: 19px;
+  transition: all 350ms ease-out 400ms;
+  color:#ae8ec0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-items {
+  list-style: none;
+  padding: 0px 9px 0px 15px;
+  display: none;
+  position: absolute;
+  background-color: #ae68b1;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0px 0px 9px 9px;
+  border: 1.5px solid #ffd700;
+  margin-top: 2px;
+}
+
+.dropdown-items li a {
+  color: black;
+  padding: 9px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-items {
+  display: block;
+}
+
+.company_title:hover,
+#nav_items li a:hover,
+#nav_items li a.selected {
+  color: #ffd700;
+  transition: all 450ms ease-in 200ms;
+}
+
+#nav_items li a.selected::after {
+  content: "";
+  background-color: #ffd700;
+  width: 23%;
+  height: 1.2px;
+  position: absolute;
+  bottom: -2px;
+  left: 40px;
+}
+
+/* #nav_items img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+} */
+
+.header #check_nav {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle_nav {
+  background-color: white;
+  height: 34px;
+  width: 44px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.toggle_nav span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  position: relative;
+}
+
+.toggle_nav span::before,
+.toggle_nav span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  left: 0;
+}
+
+.toggle_nav span::before {
+  top: -6px;
+}
+
+.toggle_nav span::after {
+  top: 6px;
+}
+
+.search {
+  display: flex;
+}
+
+.hide {
+  position: abolute;
+  left: -9990px;
+  width: 1.1px;
+  height: 1.1px;
+  visibility: hidden;
+}
+
+.search input {
+  height: 36px;
+  font-size: 13px;
+  color: rgb(78, 78, 78);
+  padding: 5px 10px;
+  border: 0.8px solid transparent;
+  border-radius: 20px;
+}
+
+#search{
+  background-color: #ae8ec0;
+  cursor: pointer;
+  color: aliceblue;
+}

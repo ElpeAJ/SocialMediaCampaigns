@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Social Media Campaigns</title>
+    <link href="../src/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="header" class="header">
+      <input type="checkbox" id="check_nav" />
+      <label for="check_nav" class="toggle_nav">
+        <span></span>
+      </label>
+
+      <div class="nav">
+        <ul id="nav_items">
+          <li>
+            <a
+              class="company_title"
+              href="https://en.wikipedia.org/wiki/Camping_World"
+              target="_blank"
+              ><div id="smc1">
+                <p class="upper1">
+                  S<span class="lower1">ocial</span>M<span class="lower1"
+                    >edia</span
+                  >C<span class="lower1">ampaigns</span>
+                </p>
+              </div></a
+            >
+          </li>
+          <input type="checkbox" id="check_nav" />
+          <label for="check_nav" class="toggle_nav">
+            <span></span>
+          </label>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li class="dropdown">
+            <a class="selected" href="#">More</a>
+            <ul class="dropdown-items">
+              <li>
+                <a class="selected" href="popular.html"
+                  >Popular Social Media Apps
+                </a>
+              </li>
+              <li><a href="parents.html">How parents can help</a></li>
+              <li>
+                <a href="legislation.html">Legislation and Guidance</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html"> Log in</a></li>
+          <li><a href="signup.html"> Sign Up</a></li>
+        </ul>
+      </div>
+      <form class="search">
+        <label for="text" class="hide">Search</label>
+        <input type="text" placeholder="Search" id="text" />
+        <input type="submit" value="find🔍" id="search" />
+        <!-- <button class="nav-button">
+          <img src="images/search-bgrmv.png" alt="search" />
+        </button> -->
+      </form>
+    </div>
+    <section class="popular">
+      <h2>Search Techniques to Stay Safe</h2>
+      <form id="popularSearchForm" action="popular.php" method="post">
+        <input
+          type="text"
+          id="searchInput"
+          name="popular"
+          placeholder="Type app name"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section class="results" id="searchResults"></section>
+    <section class="apps">
+      <h2>Popular Social Media Apps</h2>
+      <div class="popular_images">
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/facebook.jpeg" alt="" /></div>
+          <p>
+            <strong>Facebook:</strong> Connect with friends and family, but be
+            mindful of privacy settings.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/instagram.png" alt="" /></div>
+          <p>
+            <strong>Instagram:</strong> Share photos and videos, and use
+            features like private accounts and comment filters.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/twitter1.jpeg" alt="" /></div>
+          <p>
+            <strong>Twitter:</strong> Tweet updates and engage with trending
+            topics, while managing account privacy.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/snapchat.jpeg" alt="" /></div>
+          <p>
+            <strong>Snapchat:</strong> Send disappearing photos and videos, and
+            control who can view your content.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/youtube.jpeg" alt="" /></div>
+          <p>
+            <strong>YouTube:</strong> Watch and share videos, but avoid sharing
+            personal information publicly.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/telegram.png" alt="" /></div>
+          <p>
+            <strong>Telegram:</strong> Chat with friends and join groups, but be
+            aware of privacy settings and potential scams.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/wechat.png" alt="" /></div>
+          <p>
+            <strong>WeChat:</strong> Communicate with friends and family, but be
+            cautious of scams and phishing attempts.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/linkedin.png" alt="" /></div>
+          <p>
+            <strong>LinkedIn:</strong> Build professional connections and
+            showcase your skills, while maintaining a professional online
+            presence.
+          </p>
+        </div>
+        <div class="popular_images_div">
+          <div class="pimg"><img src="../images/tiktok.jpeg" alt="" /></div>
+          <p>
+            <strong>TikTok:</strong> Create and share short videos, but use
+            privacy settings to control who can view your content.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="here">You are <a class="selected" href="popular.html">Popular Apps page</a></div>
+        <div>
+          <p class="copy">
+            &copy; 2024 Stay Safe Social Media Ltd. |
+            <a href="https://www.pwc.com">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="../images/fb1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="../images/insta1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="../images/twit1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="../images/tt-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../src/index.js"></script>
+  </body>
+</html>

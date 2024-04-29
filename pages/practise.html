@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be Social, Be Safe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <div id="smcheader">
+          <a
+            class="company_title"
+            href="https://en.wikipedia.org/wiki/Camping_World"
+            target="_blank"
+          >
+            <p class="upper2">
+              S<span class="lower2">ocial</span>M<span class="lower2">edia</span
+              >C<span class="lower2">ampaigns</span>
+            </p>
+          </a>
+        </div>
+        <div><h1 class="be-social">Be Social, Be Safe</h1></div>
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Search for Safety Tips"
+            class="search-bar"
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div class="nav">
+        <ul id="nav_items_home">
+          <input type="checkbox" id="check_nav" />
+          <label for="check_nav" class="toggle_nav">
+            <span></span>
+          </label>
+          <li><a class="selected" href="index.html">Home</a></li>
+          <li><a onclick="getSocialMediaApps()" href="#">Safety Tips</a></li>
+          <li class="dropdown">
+            <a href="#">More</a>
+            <ul class="dropdown-items">
+              <li>
+                <a href="pages/popular.html">Popular Social Media Apps </a>
+              </li>
+              <li><a href="pages/parents.html">How parents can help</a></li>
+              <li>
+                <a href="pages/legislation.html">Legislation and Guidance</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="pages/contact.html">Contact us</a></li>
+          <li><a href="pages/login.html"> Log in</a></li>
+          <li><a href="Pages/signup.html"> Sign Up</a></li>
+        </ul>
+      </div>
+      <!-- <nav class="navigation">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <a href="#" onclick="getSocialMediaApps()">Social Media Apps</a>
+          </li>
+          <li><a href="#">Safety Tips</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav> -->
+    </header>
+    <main>
+      <h2>Test Your Social Media Savvy!</h2>
+      <p>
+        Let's see how you handle this situation: You receive a friend request
+        from someone you don't know on your favorite social media platform. What
+        do you do?
+      </p>
+      <div class="choice-container">
+        <a href="choice1.html" class="choice">
+          <h4>Accept the request! Maybe it's someone interesting.</h4>
+        </a>
+        <a href="choice2.html" class="choice">
+          <h4>Decline the request and check their profile for more info.</h4>
+        </a>
+      </div>
+      <div id="main-content"></div>
+    </main>
+
+    <footer>
+      <p>You are here: Home</p>
+      <p>&copy; 2024 Be Social, Be Safe. All rights reserved.</p>
+      <ul class="social-media">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function getSocialMediaApps() {
+        // Simulate fetching data from a web service
+        const socialMediaApps = [
+          { name: "Instagram", features: "this and that", risks: "no risks" },
+          { name: "TikTok", features: "blah blah blah", risks: "more risks" },
+        ];
+
+        // Update the main content with the fetched data (replace with actual logic)
+        const mainContent = document.getElementById("main-content");
+        mainContent.innerHTML = "Get ready to see some social media apps"; // Clear any existing content
+        socialMediaApps.forEach((app) => {
+          const appInfo = `<h2>${app.name}</h2><p>Features: ${app.features}</p><p>Potential Risks: ${app.risks}</p>`;
+          mainContent.innerHTML += appInfo;
+        });
+      }
+    </script>
+  </body>
+</html>

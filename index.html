@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Social Media Campaigns</title>
-    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link href="src/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -40,7 +40,7 @@
             <span></span>
           </label>
           <li><a class="selected" href="index.html">Home</a></li>
-          <li><a href="pages/information.html">Safety Tips</a></li>
+          <li><a href="pages/information.html">Information</a></li>
           <li class="dropdown">
             <a href="#">More</a>
             <ul class="dropdown-items">
@@ -81,23 +81,23 @@
             alt=""
           />
         </div>
-        <form class="safety-tips">
-          <input type="text" placeholder="Look here for safety tips" />
+        <form class="safety-tips" action="pages/popular.php" method="post">
+          <input
+            type="text"
+            placeholder="Look here for safety tips"
+            name="popular"
+          />
           <button type="submit">Search</button>
         </form>
       </div>
       <div>
-        <img src="images/girlOnline.jpeg" alt="Social media app icons" />
+        <img
+          class="bg"
+          src="images/girlOnline.jpeg"
+          alt="Social media app icons"
+        />
       </div>
     </div>
-
-    <!-- <section class="services">
-      <h3>Our Web Services</h3>
-      <ul>
-        <li><a href="#">Monthly Safety Newsletter</a></li>
-        <li><a href="#">Live Q&A Sessions with Experts</a></li>
-      </ul>
-    </section> -->
     <div id="newsletter-img-div">
       <img id="newsletter-img" src="images/newsletter2.jpeg" alt="" />
     </div>
@@ -111,33 +111,68 @@
         <p>Live Q&A Sessions with Experts</p>
       </div>
 
-      <form action="pages/newsletter.php" class="newsletter-form">
+      <form action="pages/newsletter.php" class="newsletter-form" method="post">
         <label for="E-mail" class="hide">Email</label>
-        <input type="text" placeholder="Enter E-mail" id="E-mail" name="email" />
+        <input
+          type="text"
+          placeholder="Enter E-mail"
+          id="E-mail"
+          name="email"
+        />
         <button>Sign Up</button>
       </form>
     </section>
-    <div><img src="images/question.jpeg" alt="" /></div>
+    <div class="home-parents">
+      <div class="home-parents-img">
+        <img src="images/question.jpeg" alt="" />
+      </div>
+      <div class="home-parents-button">
+        <button><a href="pages/parents.html">Learn More</a></button>
+      </div>
+    </div>
 
     <footer>
-      <p>
-        &copy; 2024 Stay Safe Social Media Ltd. |
-        <a href="#">Privacy Policy</a>
-      </p>
-      <ul class="social-media">
-        <li>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-      <span class="you-are-here">You are here: Home</span>
+      <div class="footer">
+        <div class="here">You are <a class="selected" href="index.html"> Home</a></div>
+        <div>
+          <p class="copy">
+            &copy; 2024 Stay Safe Social Media Ltd. |
+            <a href="https://www.pwc.com">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="images/fb1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="images/insta1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="images/twit1-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+        <div class="footer-img-div">
+          <a href="https://web.facebook.com/socialmedia" target="_blank"
+            ><img
+              class="google"
+              src="images/tt-removebg-preview.png"
+              alt="social media"
+          /></a>
+        </div>
+      </div>
     </footer>
-    <button id="animate-button">Animate Text</button>
-    <p id="animated-text">This text will be animated!</p>
   </body>
 </html>
