@@ -8,7 +8,7 @@ include('db.php');
 // Database connection details
 $servername = "localhost";
 $username = "root";
-$password = "123456";
+$password = "";
 $dbname = "smcampaigns";
 
 // Create connection

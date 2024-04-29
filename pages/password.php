@@ -1,33 +1,13 @@
  <?php
-//session_start();
-//$_SESSION["userId"] = "1";
-//$_SESSION["username"] = "?";
 
-//$conn = mysqli_connect("localhost", "root", "123456", "smcampaigns") or die("Connection Error: " . mysqli_error($conn));
-//require_once('setup.php');
 
-//$username = mysqli_real_escape_string($conn, $_POST['username']);
-//$password = mysqli_real_escape_string($conn, $_POST['password']);
-
-//if (count($_POST) > 0) {
-    //$result = mysqli_query($conn, "SELECT *from users WHERE userId='" . $_SESSION["userId"] . "'");
-   // $sql = "SELECT * FROM signup WHERE username='" . $_SESSION["username"] . "'";
-    //$stmt = mysqli_prepare($conn, $sql);
-    //$row = mysqli_fetch_array($result);
-    //if ($_POST["currentPassword"] == $row["password"]) {
-     //   mysqli_query($conn, "UPDATE signup set password='" . $_POST["newPassword"] . "' WHERE userId='" . $_SESSION["userId"] . "'");
-    //    $message = "Password Changed";
-   // } else
-    //    $message = "Current Password is not correct";
-//}
-//
+$conn = mysqli_connect("localhost", "root", "", "smcampaigns") or die("Connection Error: " . mysqli_error($conn));
+require_once('setup.php');
 
 session_start();
 
-// Assuming username is retrieved through login process (remove empty assignment)
-// $_SESSION["username"] = "";
 
-$conn = mysqli_connect("localhost", "root", "123456", "smcampaigns") or die("Connection Error: " . mysqli_error($conn));
+$conn = mysqli_connect("localhost", "root", "", "smcampaigns") or die("Connection Error: " . mysqli_error($conn));
 require_once('setup.php');
 
 if (count($_POST) > 0) {

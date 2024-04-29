@@ -7,7 +7,7 @@
   <body>
         
    <?php
-    $conn = new mysqli("localhost","root","123456");
+    $conn = new mysqli("localhost","root","");
     if($conn->connect_error){
         die("Connection failed: " . $conn->connect_error);
     }
@@ -22,7 +22,7 @@
     }
 
 // Select the database
-    $conn = new mysqli("localhost","root","123456","smcampaigns");
+    $conn = new mysqli("localhost","root","","smcampaigns");
     // Check if database is selected
     if($conn->connect_error){
         die ("<p class='setup'>Could not select database: </p>" . $conn->connect_error);

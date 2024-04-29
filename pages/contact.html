@@ -47,6 +47,7 @@
               </li>
             </ul>
           </li>
+          <li><a href="livestreaming.html">Livestreaming</a></li>
           <li><a class="selected" href="contact.html">Contact us</a></li>
           <li><a href="login.html"> Log in</a></li>
           <li><a href="signup.html"> Sign Up</a></li>
@@ -56,9 +57,7 @@
         <label for="text" class="hide">Search</label>
         <input type="text" placeholder="Search" id="text" />
         <input type="submit" value="find🔍" id="search" />
-        <!-- <button class="nav-button">
-          <img src="images/search-bgrmv.png" alt="search" />
-        </button> -->
+        
       </form>
     </div>
 
@@ -90,40 +89,53 @@
     </form>
     <footer>
       <div class="footer">
-        <div>You are <a class="selected" href="index.html">Home</a></div>
+        <div class="here">
+          You are
+          <a class="selected" href="parents.html">in the contact's page</a>
+        </div>
         <div>
-          <p>
+          <p class="copy">
             &copy; 2024 Stay Safe Social Media Ltd. |
             <a href="https://www.pwc.com">Privacy Policy</a>
           </p>
         </div>
         <div class="footer-img-div">
           <a href="https://web.facebook.com/socialmedia" target="_blank"
-            ><img class="google" src="images/fb1.jpeg" alt="social media"
+            ><img
+              class="google"
+              src="../images/fb1-removebg-preview.png"
+              alt="social media"
           /></a>
         </div>
         <div class="footer-img-div">
           <a href="https://web.facebook.com/socialmedia" target="_blank"
-            ><img class="google" src="images/insta1.jpeg" alt="social media"
+            ><img
+              class="google"
+              src="../images/insta1-removebg-preview.png"
+              alt="social media"
           /></a>
         </div>
         <div class="footer-img-div">
           <a href="https://web.facebook.com/socialmedia" target="_blank"
-            ><img class="google" src="images/twit1.png" alt="social media"
+            ><img
+              class="google"
+              src="../images/twit1-removebg-preview.png"
+              alt="social media"
           /></a>
         </div>
         <div class="footer-img-div">
           <a href="https://web.facebook.com/socialmedia" target="_blank"
-            ><img class="google" src="images/tik1.png" alt="social media"
+            ><img
+              class="google"
+              src="../images/tt-removebg-preview.png"
+              alt="social media"
           /></a>
         </div>
       </div>
     </footer>
     <script>
-      // Check if URL parameter "success" is present
       const urlParameter = new URLSearchParams(window.location.search);
-      if (urlParamarameter.has("sent")) {
-        // Display success message
+      if (urlParamarameter.has("success")) {
         alert("Message sent successfully! We will be in touch shortly");
       }
     </script>

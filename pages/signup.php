@@ -27,15 +27,6 @@ $dateofbirth = mysqli_real_escape_string($conn, $_POST['dob']);
 $gender = mysqli_real_escape_string($conn, $_POST['gender']);
 $term = mysqli_real_escape_string($conn, $_POST['term']);
 
-// Basic validation (add more as needed)
-// if (empty($first_name) || empty($last_name) || empty($address) ||
-//     empty($email) || empty($username) || empty($password)) {
-//   echo "Please fill in all required fields.";
-//   exit;
-// }
-
-// Hash password for security (recommended)
-// $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 // Create prepared statement
 $insertIntoSignup = "INSERT INTO signup (first_name, last_name, address, town, county, postcode, tel, email, username, password, dateofbirth, gender, term)

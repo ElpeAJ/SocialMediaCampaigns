@@ -1,6 +1,6 @@
 <?php
 
-// Include configuration file (assuming `config.php` is in the same directory)
+
 require_once('config.php');
 require_once('setup.php');
 
@@ -12,13 +12,10 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-// Get form data (replace with actual field names)
-
-
 
 // Check if email field is set in the $_POST array
 if(isset($_POST['email'])) {
-    //$email = $_POST['email'];
+ 
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     echo "<p class='successful'>Email: $email</p>"; 
 } else {
